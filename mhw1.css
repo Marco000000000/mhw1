@@ -1,9 +1,23 @@
 html{
   font-size: 25px;
 }
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align:justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height:normal;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  margin: 0px;
+  background-color: rgba(0, 0, 0,0.2);
+  }
+  
 header{
     position: relative;
-    height: 500px;
+    height: 50vh;
     width: 100%;
     background-image: url("ES32-CAM-esp-32-camera-module_LR.jpg") ;
     background-size: cover;
@@ -43,19 +57,7 @@ header nav{
   color: rgb(255, 255, 255);
   position: relative;
 }
-body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align:justify;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  line-height:normal;
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1rem;
-  margin: 0px;
-  background-color: rgba(0, 0, 0,0.2);
-  }
+
 #link{
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -74,6 +76,55 @@ a:hover{
 }
 a:active{
   color: burlywood;
+}
+#usr{
+  margin-top:-60px;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  z-index: 2;
+}
+#Creatore{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article{
+  width: 65%;
+}
+article section{
+  padding: 2%;
+  border:10px solid rgba(0, 0, 0,0.2);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+article a{ 
+  color:blue;
+  box-shadow:none;
+  padding:0px;
+  border:0px;
+}
+article h1{
+  font-size: 2rem;
+  font-family:'Courier New', Courier, monospace;
+  letter-spacing: 1%;
+}
+article section div{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row-reverse;
+}
+.testo{
+  display: block;
 }
 .img{ 
   display:  block;
@@ -106,30 +157,16 @@ a:active{
   
   background-image: url("ESP32-CAM.jpg") ;
 }
-#usr{
-  margin-top:-60px;
-  height: 120px;
-  width: 120px;
-  border-radius: 60px;
-  z-index: 2;
-}
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#Creatore{
-    display: flex;
-    align-items: center;
-    text-align: center;
+.Commento{
+  font-weight:bolder;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
 }
 footer p{
   margin: auto 3px;
 }
 footer{   
   width: 100%;
-  bottom: 0em; 
   font-size: 1rem;
   height: auto;
   display: flex;
@@ -137,52 +174,21 @@ footer{
   color: rgba(255, 255, 255,0.6);
   justify-content: space-between;
 }
-article{
-  width: 65%;
-}
-article section{
-  padding: 2%;
-  border:10px solid rgba(0, 0, 0,0.2);
-  border-radius: 5px;
-  margin-bottom: 50px;
-}
-article a{ 
-  color:blue;
-  box-shadow:none;
-  padding:0px;
-  border:0px;
-}
-article h1{
-  font-size: 2rem;
-  font-family:'Courier New', Courier, monospace;
-  letter-spacing: 1%;
-}
-article section div{
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  flex-direction: row-reverse;
-}
-.testo{
-  display: block;
-}
-
-.Commento{
-  font-weight:bolder;
-  font-family: 'Great Vibes', cursive;
-  font-size: 2rem;
-}
 
 @media (max-width: 800px) {
-
-  #Link{
-    display: none;
-  }
   article{
     width: 98%;
   }
   article section {
     border:5px solid rgba(0, 0, 0,0.2);
+  }
+  .img{
+    margin: 5px;
+    background-size: cover;
+  }
+
+  #Link{
+    display: none;
   }
   nav{
     flex-direction: column;
@@ -193,13 +199,10 @@ article section div{
     font-size: 20px;
   }
   
-  .img{
-    margin: 5px;
-    background-size: cover;
-  }
+  
   header{
     position: relative;
-    height: 50vh;
+    height: 40vh;
   }
 }
     
