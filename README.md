@@ -1,5 +1,5 @@
-# WebProgramming
+# Istruzioni
 
-### Questo è il readme che verrà modificato in seguito 
+### Guardare la presentazione nella repository
 
 # Buona lettura
